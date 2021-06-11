@@ -33,7 +33,7 @@ Plugins:
 
 Musica:
   - [Betamaxx - Redlining 6th (OST Kung Fury)](https://www.youtube.com/watch?v=3LuDUu0rvnw)
-  - [Mitch Murder - The Final Stretch (OST Kung Fury)](https://www.youtube.com/watch?v=go1_dv5YrWc)
+  - [Mitch Murder - Enter the Fury (OST Kung Fury)](https://www.youtube.com/watch?v=5XRlh3enE3Q)
 
 <br/>
 
