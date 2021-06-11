@@ -27,7 +27,10 @@ public class Triggers : MonoBehaviour
 
     private void Update()
     {
-        tTextCanvas.localScale = new Vector3(speed, speed, speed);
+        if (manager.Jugando)
+        {
+            tTextCanvas.localScale = new Vector3(speed, speed, speed);
+        }
     }
 
     private void OnTriggerEnter(Collider other)

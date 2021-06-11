@@ -11,8 +11,10 @@ public class CargandoOut : MonoBehaviour {
     public TextMeshProUGUI testo;
     public Image sliderFill;
     public GameObject UI;
+    public TextMeshProUGUI textoCount;
     public UnityEvent eventoAntes;
     public UnityEvent eventoFinal;
+    public UnityEvent eventoFinal2;
 
     private float speed = 0;
 
@@ -38,8 +40,24 @@ public class CargandoOut : MonoBehaviour {
         }
         speed = v_end;
         eventoFinal.Invoke();
-        Destroy(UI);
+        UI.SetActive(false);
+        //enabled = false;
+        StartCoroutine(CountStart());
+    }
+
+    IEnumerator CountStart()
+    {
+        textoCount.transform.localScale = Vector3.one * 2;
+        textoCount.SetText("3");
+        yield return new WaitForSecondsRealtime(1.1f);
+        textoCount.SetText("2");
+        yield return new WaitForSecondsRealtime(1.1f);
+        textoCount.SetText("1");
+        yield return new WaitForSecondsRealtime(1.1f);
+        textoCount.transform.localScale = Vector3.zero;
+        eventoFinal2.Invoke();
         enabled = false;
+        StopAllCoroutines();
     }
 
     private void Update()

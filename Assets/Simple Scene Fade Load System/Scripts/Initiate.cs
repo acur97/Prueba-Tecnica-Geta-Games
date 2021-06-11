@@ -10,7 +10,7 @@ public static class Initiate
     {
         if (areWeFading)
         {
-            Debug.Log("Already Fading");
+            //Debug.Log("Already Fading");
             return;
         }
 
@@ -29,7 +29,6 @@ public static class Initiate
         scr.start = true;
         areWeFading = true;
         scr.InitiateFader();
-        
     }
 
     public static void DoneFading() {

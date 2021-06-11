@@ -80,7 +80,7 @@ public class ArcadeDriftController : MonoBehaviour
     private float fixedTime = 0;
     private bool _boost = false;
 
-    private bool Play = false;
+    public bool Play = false;
 
     public void PuedoJugar(bool on)
     {

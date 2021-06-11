@@ -2149,6 +2149,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   TextoFinal: {fileID: 985629459}
+  Jugando: 0
 --- !u!4 &312968073
 Transform:
   m_ObjectHideFlags: 0
@@ -2180,7 +2181,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -9437,6 +9438,7 @@ MonoBehaviour:
   postVolume: {fileID: 59382459}
   Velocidad: -2.7203628e-19
   VelocidadMagnitude: 0
+  Play: 0
 --- !u!4 &2057729558
 Transform:
   m_ObjectHideFlags: 0
@@ -9996,6 +9998,7 @@ MonoBehaviour:
   testo: {fileID: 2268769202808203678}
   sliderFill: {fileID: 2268769202456561835}
   UI: {fileID: 2268769202751764574}
+  textoCount: {fileID: 180751567}
   eventoAntes:
     m_PersistentCalls:
       m_Calls:
@@ -10050,6 +10053,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+  eventoFinal2:
+    m_PersistentCalls:
+      m_Calls:
       - m_Target: {fileID: 312968072}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: Iniciar
@@ -10060,7 +10066,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 1
+          m_BoolArgument: 0
         m_CallState: 2
 --- !u!224 &2268769202602135465
 RectTransform:

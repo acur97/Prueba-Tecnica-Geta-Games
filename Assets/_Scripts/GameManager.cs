@@ -22,10 +22,13 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI textTiempo;
     private float _tiempo = 0;
 
-    private bool Jugando = false;
-
     public UnityEvent AlFinalizar;
     public TextMeshProUGUI TextoFinal;
+
+    public bool Jugando = false;
+    private float speed = 1;
+    private float elapsed = 0;
+    private AudioSource musica;
 
     private void Awake()
     {
@@ -34,6 +37,10 @@ public class GameManager : MonoBehaviour
         _gameManager = this;
         _tiempo = tiempoInicial;
         contadorVueltas = vueltas + 1;
+
+        puntoCanvas.position = cam.WorldToScreenPoint(rootCanvas.position);
+
+        musica = GetComponent<AudioSource>();
     }
 
     public void Iniciar()
@@ -68,6 +75,8 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
+        musica.volume = speed;
+
         if (Jugando && Input.GetButtonDown("Cancel"))
         {
             if (canvasPausa.activeSelf)
@@ -81,6 +90,7 @@ public class GameManager : MonoBehaviour
                 Time.timeScale = 0;
             }
         }
+
         puntoCanvas.position = cam.WorldToScreenPoint(rootCanvas.position);
 
         if (Jugando)
@@ -126,6 +136,19 @@ public class GameManager : MonoBehaviour
     public void VolverMenu()
     {
         Initiate.Fade("MainMenu", Color.black, 0.5f);
+        StartCoroutine(ChangeSpeed(1, 0, 2f));
         Time.timeScale = 1;
+    }
+
+    public IEnumerator ChangeSpeed(float v_start, float v_end, float duration)
+    {
+        elapsed = 0.0f;
+        while (elapsed < duration)
+        {
+            speed = Mathf.Lerp(v_start, v_end, elapsed / duration);
+            elapsed += Time.deltaTime;
+            yield return null;
+        }
+        speed = v_end;
     }
 }

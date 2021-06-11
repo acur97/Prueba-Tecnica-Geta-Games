@@ -18,6 +18,8 @@ public class Cargando : MonoBehaviour {
     private readonly Color blackOff = new Color(0, 0, 0, 0);
     private readonly string _GamePlay = "GamePlay";
 
+    private AudioSource musica;
+
     private void Awake()
     {
         UI.SetActive(false);
@@ -26,6 +28,8 @@ public class Cargando : MonoBehaviour {
         sliderBackground.color = blackOff;
         sliderFill.color = blackOff;
         sliderV.value = 0;
+
+        musica = GetComponent<AudioSource>();
     }
 
     public void IniciarCarga()
@@ -67,5 +71,7 @@ public class Cargando : MonoBehaviour {
         testo.color = new Color(1, 1, 1, speed);
         sliderBackground.color = new Color(1, 1, 1, speed);
         sliderFill.color = new Color(1, 0, 0, speed);
+
+        musica.volume = speed.Remap(0, 1, 1, 0);
     }
 }
