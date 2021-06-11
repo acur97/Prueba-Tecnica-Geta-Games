@@ -17,7 +17,7 @@ Paquetes base:
   - post processing
   - text mesh pro
 ```
->
+
 Plugins:
   - [amplify occlusion](https://github.com/AmplifyCreations/AmplifyOcclusion)
   - [simple fade scene](https://assetstore.unity.com/packages/tools/particles-effects/simple-fade-scene-transition-system-81753)
@@ -25,10 +25,8 @@ Plugins:
   - [texture panner shaders](https://github.com/AdultLink/TexturePanner)
   - [Custom Wireframe](https://github.com/UnityCommunity/UnityLibrary/blob/master/Assets/Shaders/2D/Effects/WireFrame.shader)
 
-```bash
 Musica:
-  - ***
-```
+  - [Betamaxx - Redlining 6th (OST Kung Fury)](https://www.youtube.com/watch?v=3LuDUu0rvnw)
 
 >> Controles (teclado)
   - Flechas direccionales o WASD, para la direccion y la acceleracion
