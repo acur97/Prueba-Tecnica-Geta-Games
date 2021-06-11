@@ -52,4 +52,7 @@ El contador de partidas y el record de segundos faltantes mayor se mostrara en e
 
 <br/>
 
-![](../master/img/1.png)
+![](/img/1.png)
+![](/img/2.png)
+![](/img/3.png)
+![](/img/4.png)
