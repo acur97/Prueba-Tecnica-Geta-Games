@@ -12,8 +12,6 @@ Sistemas operativos:
     - Testeado en Windows dx11.
 ```
 
-[I'm an inline-style link](https://www.google.com)
-
 > Unity
 El proyecto usa la version Unity ```Unity 2020.3.11f1```, con los siguientes paquetes:
 ```bash
