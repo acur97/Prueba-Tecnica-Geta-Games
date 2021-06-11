@@ -22,15 +22,13 @@ Paquetes base:
   - post processing
   - text mesh pro
 ```
-```bash
+>
 Plugins:
-  - amplify occlusion
-  - simple fade scene
-  - Compute Stochastic Reflections
-  - texture panner shaders
-  - playdeadgames TAA
-  - [Link to Google](https://www.google.com)
-```
+  - [amplify occlusion](https://github.com/AmplifyCreations/AmplifyOcclusion)
+  - [simple fade scene](https://assetstore.unity.com/packages/tools/particles-effects/simple-fade-scene-transition-system-81753)
+  - [Compute Stochastic Reflections](https://github.com/simeonradivoev/ComputeStochasticReflections)
+  - [texture panner shaders](https://github.com/AdultLink/TexturePanner)
+
 ```bash
 Musica:
   - ***
