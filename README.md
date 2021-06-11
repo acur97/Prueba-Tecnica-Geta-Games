@@ -26,6 +26,7 @@ Plugins:
   - [simple fade scene](https://assetstore.unity.com/packages/tools/particles-effects/simple-fade-scene-transition-system-81753)
   - [Compute Stochastic Reflections](https://github.com/simeonradivoev/ComputeStochasticReflections)
   - [texture panner shaders](https://github.com/AdultLink/TexturePanner)
+  - [Custom Wireframe](https://github.com/UnityCommunity/UnityLibrary/blob/master/Assets/Shaders/2D/Effects/WireFrame.shader)
 
 ```bash
 Musica:
