@@ -1,5 +1,5 @@
 # Prueba-Tecnica-Geta-Games
-Prueba Tecnica Mario Kart-like microgame
+Prueba Tecnica Mario Kart-like Synthwave microgame
 
 ## Especificaciones técnicas
 ```bash
