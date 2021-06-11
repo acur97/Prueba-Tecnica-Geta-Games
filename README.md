@@ -27,6 +27,7 @@ Plugins:
   - Compute Stochastic Reflections
   - texture panner shaders
   - playdeadgames TAA
+  - [Link to Google](https://www.google.com)
 ```
 ```bash
 Musica:
