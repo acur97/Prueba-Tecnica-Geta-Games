@@ -2,9 +2,6 @@
 Prueba Tecnica Mario Kart-like microgame
 
 ## Especificaciones técnicas
-En este `Readme` se especificaran todos los contenidos
-
-### Requerimientos técnicos
 ```bash
 Versión actual: 0.1
 Tamaño Build: 70.2 MB.
